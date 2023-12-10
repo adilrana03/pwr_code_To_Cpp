@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.pwrlabs</groupId>
+    <artifactId>pwrj</artifactId>
+    <version>2.0.11</version>
+
+    <name>PWRJ</name>
+    <description>PWRJ is a lightweight, simple, easy to use Java library for integrating with the PWR Chain and building wallets and virtual machines on it.</description>
+    <url>https://github.com/pwrlabs/pwrj</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Bouncy Castle Provider -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.68</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.14</version> <!-- Use the latest version available -->
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
+    </dependencies>
+
+    <scm>
+        <connection>scm:git:git://github.com/pwrlabs/pwrj.git</connection>
+        <developerConnection>scm:git:ssh://github.com:pwrlabs/pwrj.git</developerConnection>
+        <url>https://github.com/pwrlabs/pwrj</url>
+    </scm>
+
+</project>
